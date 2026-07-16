@@ -1,0 +1,32 @@
+name: Feature request
+description: Propose a focused improvement to IssueSnap.
+title: '[Feature]: '
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the reporting workflow problem or missing information.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Include an example of the generated draft or interaction when helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and data-handling impact
+      description: Explain any additional browser data, storage, clipboard, or third-party handoff the proposal would require.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false

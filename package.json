@@ -1,0 +1,48 @@
+{
+  "name": "issue-snap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A privacy-first Chrome extension for turning page context into GitHub issue drafts.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate": "npm run typecheck && npm test && npm run build"
+  },
+  "keywords": [
+    "chrome-extension",
+    "github",
+    "issue-template",
+    "developer-tools",
+    "privacy"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gokcenciftci/issue-snap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gokcenciftci/issue-snap/issues"
+  },
+  "homepage": "https://github.com/gokcenciftci/issue-snap#readme",
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "@types/chrome": "^0.1.32",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.1.4",
+    "vitest": "^4.1.10"
+  }
+}
